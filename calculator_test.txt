@@ -1,0 +1,90 @@
+package test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class First {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\USer\\Downloads\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://www.calculator.net/");
+		
+//		Multiplication
+		
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		
+		driver.findElement(By.xpath("//span[contains(text(),'×')]")).click();
+		
+		driver.findElement(By.xpath("//span[contains(text(),'5')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'5')]")).click();
+		
+		Thread.sleep(6000);
+//      division
+		driver.findElement(By.xpath("//span[contains(text(),'AC')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[4]/span[1]")).click();
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[4]/span[1]")).click();
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[4]/span[1]")).click();
+		
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[4]/span[4]")).click();
+		
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[4]/span[1]")).click();
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[4]/span[1]")).click();
+
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//span[contains(text(),'AC')]")).click();
+		
+//		Addition
+		
+		driver.findElement(By.xpath("//span[contains(text(),'–')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[1]/span[4]")).click();
+		
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'5')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'5')]")).click();
+		
+		Thread.sleep(6000);
+		driver.findElement(By.xpath("//span[contains(text(),'AC')]")).click();
+		
+	//Subtraction
+		
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'8')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		
+		driver.findElement(By.xpath("//span[contains(text(),'–')]")).click();
+		
+		driver.findElement(By.xpath("//span[contains(text(),'–')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		driver.findElement(By.xpath("//tbody/tr[2]/td[2]/div[1]/div[4]/span[1]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'9')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'4')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'8')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'2')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'3')]")).click();
+		
+		Thread.sleep(6000);
+    }
+}
